@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tilde Inc</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="Stylesheet" type="text/css" media="screen" href="css/site.css">
+<link rel="Stylesheet" type="text/css" media="screen and (max-width:1010px)" href="css/middle.css">
+<link rel="Stylesheet" type="text/css" media="screen and (max-width:749px)" href="css/small.css">
+</head>
+<body>
+	<!-- 导航 -->
+	<div id="nav" class="container">
+		<div class="content">
+			<a href="###" class="logo"><img src="img/logo.png"></a>
+			<a href="###" class="menu-button">Menu</a>
+			<ul>
+				<li><a href="###">About Us</a></li>
+				<li><a href="###">Consulting</a></li>
+				<li><a href="###">Training</a></li>
+				<li><a href="###">Skylight</a></li>
+				<li><a href="###">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- 头部 -->
+	<div id="header" class="container">
+		<div class="content">
+			<h2><span>Hi. We’re Tilde.</span></h2>
+			<h1>We live and breathe code.</h1>
+			<img src="img/founder.png" alt="Team Photo">
+			<div class="call_to_action">
+				<div><a href="/about-us/" class="arrow">Meet the Team</a></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 副头部 -->
+	<div id="subhead" class="container">
+		<div class="border"></div>
+		<div class="content">
+			<p>
+				<span class="line">We're a small team of developers who are passionate about crafting great software.</span>
+				<span class="line">We're some of the faces behind Ember.js, Ruby on Rails, jQuery and more.</span>
+				<span class="line">We're here to help you build the products and tools of the future.</span>
+			</p>
+			<h2>You may recognize us from around town</h2>
+			<ul id="home-open-source">
+				<li><a href="http://rubyonrails.org"><img src="img/rails.png" alt="Rails"></a></li>
+				<li><a href="http://jquery.com"><img src="img/jqu.png" alt="jQuery"></a></li>
+				<li><a href="http://emberjs.com"><img src="img/emb.png" alt="Ember.js"></a></li>
+				<li><a href="http://handlebarsjs.com"><img src="img/hand.png" alt="Handlebars"></a></li>
+				<li><a href="http://gembundler.com"><img src="img/bund.png" alt="Bundler"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 主体 -->
+	<div id="main" role="main" class="container">
+		<div class="content">
+			<h2><span>What We Do</span></h2>
+			<div id="home-what-we-do">
+				<div id="consulting">
+					<img src="img/consulting.png" alt="Consulting illustration">
+					<h3>Ember.js &amp; Product Consulting</h3>
+					<p>We can handle the most challenging technical problems, and we've also got architecture, product and marketing chops.</p>
+					<a href="/ember-consulting/">Learn about our process</a>
+				</div>
+				<div id="engagements">
+					<img src="img/engagements.png" alt="Training and Speaking Engagements illustration">
+					<h3>Training &amp; Speaking Engagements</h3>
+					<p>We offer public, private and group training classes for Ember.js, Ruby on Rails and JavaScript. We also speak at industry conferences.</p>
+					<a href="/training/">View our upcoming schedule</a>
+				</div>
+				<div id="open-source">
+					<img src="img/open.png" alt="Open Source illustration">
+					<h3>Open Source<br>Development</h3>
+					<p>We’ve created and made contributions to some of the most notable and successful open-source projects in the world.
+					</p>
+					<a href="/about-us/">See what we've done</a>
+				</div>
+			</div>
+			<hr>
+			<div id="home-inquire" class="inquire oneline">
+				<span class="headline">Have a Project in Mind?</span>
+				<a href="/contact/" class="blue-button-animated">Give Us a Shout<span class="arrow"></span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div id="footer" class="container">
+		<div class="content">
+			<div class="nav">
+				<ul class="left">
+					<li><a href="/about-us/">About Us</a></li>
+					<li><a href="/ember-consulting/">Consulting</a></li>
+				</ul>
+				<a href="###" class="logo"><img src="img/tilde-logo-footer.png"></a>
+				<ul class="right">
+					<li><a href="/training/">Training</a></li>
+					<li><a href="/skylight/">Skylight</a></li>
+					<li><a href="/contact/">Contact</a></li>
+				</ul>
+			</div>
+			<p class="copyright">Copyright 
+				<!-- 获取当前年份 -->
+				<script>
+					var year = new Date().getFullYear();
+					document.write(year+"   ");
+				</script>Tilde Inc.
+			</p>
+		</div>
+	</div>	
+	
+	<!--  -->
+	<script type="text/javascript" src="js/jq.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//$("#nav ul").hide();
+			$(".menu-button").click(function(){
+				$(".content ul").toggleClass("expanded");
+				// if($(".content ul").hide()){
+				// 	$(".content ul").show();
+				// }else{
+				// 	$(".content ul").hide();
+				// }
+			})
+		})
+	</script>
+</body>
+</html>
